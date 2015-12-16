@@ -33,23 +33,23 @@ function parse(urlString) {
 
   var pathComponents = urlParseResult.pathname.split('/'); // the 0th component is always empty
 
-  if (pathComponents.length === 3 && pathComponents[1] === 'gallery') {
+  if ((pathComponents.length === 3) && (pathComponents[1] === 'gallery')) {
     return {
       type: 'gallery',
       id: pathComponents[2]
     };
-  } else if (pathComponents.length === 4 && pathComponents[1] === 'r') {
+  } else if ((pathComponents.length === 4) && (pathComponents[1] === 'r')) {
     return {
       type: 'reddit',
       subreddit: pathComponents[2],
       id: pathComponents[3]
     }
-  } else if (pathComponents.length === 3 && pathComponents[1] === 'a') {
+  } else if ((pathComponents.length === 3) && (pathComponents[1] === 'a')) {
     return {
       type: 'album',
       id: pathComponents[2]
     };
-  } else if (pathComponents.length === 2 && pages.indexOf(pathComponents[1] === -1)) {
+  } else if ((pathComponents.length === 2) && (pages.indexOf(pathComponents[1]) === -1)) {
     var nameComponents = pathComponents[1].split('.');
     if (nameComponents.length <= 2) {
       return {

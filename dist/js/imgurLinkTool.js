@@ -416,7 +416,7 @@ function parse(urlString) {
       type: 'album',
       id: pathComponents[2]
     };
-  } else if (pathComponents.length === 2 && pages.indexOf(pathComponents[1] === -1)) {
+  } else if (pathComponents.length === 2 && pages.indexOf(pathComponents[1]) === -1) {
     var nameComponents = pathComponents[1].split('.');
     if (nameComponents.length <= 2) {
       return {
