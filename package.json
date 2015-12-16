@@ -1,0 +1,25 @@
+{
+  "name": "imgur-linktool",
+  "version": "0.0.1",
+  "description": "A library for detecting and manipulating imgur links",
+  "main": "src/imgurLinkTool.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbie-c/imgur-linktool.git"
+  },
+  "keywords": [
+    "imgur"
+  ],
+  "author": "Robbie Coomber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robbie-c/imgur-linktool/issues"
+  },
+  "homepage": "https://github.com/robbie-c/imgur-linktool#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
