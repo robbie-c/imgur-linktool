@@ -33,6 +33,10 @@ describe('imgur-linktool', function () {
       expect(result.type).to.be('image');
       expect(result.id).to.be('iaQrSyX');
     });
+    it('should reject other imgur pages', function () {
+      var result = imgurLinkTool.parse('http://imgur.com/privacy#adchoices');
+      expect(result).to.be(null);
+    });
   });
   describe('imageIdFromUrl', function () {
     describe('parse', function () {
